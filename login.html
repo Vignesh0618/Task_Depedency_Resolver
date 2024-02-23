@@ -1,0 +1,420 @@
+<html>
+
+<head>
+    <title>welcome page</title>
+    <style>
+        .text {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .text1 {
+
+            max-width: 90ch;
+            text-align: center;
+            transform: scale(0.94);
+            animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+            color: rgb(231, 226, 226);
+
+
+        }
+
+        span {
+            display: inline-block;
+            opacity: 0;
+            filter: blur(5px);
+        }
+
+
+        span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(6) {
+            animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(7) {
+            animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(8) {
+            animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(9) {
+            animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(10) {
+            animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(11) {
+            animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(12) {
+            animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(13) {
+            animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(14) {
+            animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(15) {
+            animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(16) {
+            animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(17) {
+            animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(18) {
+            animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            text-decoration: none;
+        }
+
+        body {
+            overflow: hidden;
+            background-image: url("task1.jpeg");
+            font-family: "Poppins", sans-serif;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-decoration: none;
+
+        }
+
+
+
+        section {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        section .colour {
+            position: absolute;
+            filter: blur(150px);
+        }
+
+        section .colour:nth-child(1) {
+            top: -350px;
+            width: 600px;
+            height: 600px;
+
+        }
+
+        section .colour:nth-child(2) {
+            left: 100px;
+            width: 800px;
+            height: 500px;
+            bottom: -150px;
+
+        }
+
+        section .colour:nth-child(3) {
+            right: 100px;
+            bottom: 50px;
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .box {
+            position: relative;
+            margin-left: 100px;
+        }
+
+        .box .square {
+            position: absolute;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.1);
+            animation-delay: calc(-1s * var(--i));
+            animation: animate 7s linear infinite;
+            box-shadow: 0 25px 45px rgba(168, 155, 155, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(232, 224, 224, 0.2);
+            border-bottom: 1px solid rgba(208, 203, 203, 0.2);
+            margin-left: 100px;
+        }
+
+        @keyframes animate {
+
+            0%,
+            100% {
+                transform: translateY(-40px);
+            }
+
+            50% {
+                transform: translateY(40px);
+            }
+        }
+
+        .box .square:nth-child(1) {
+            top: -50px;
+            left: -60px;
+            width: 100px;
+            height: 100px;
+            margin-left: 100px;
+        }
+
+        .box .square:nth-child(2) {
+            z-index: 2;
+            top: 150px;
+            left: -100px;
+            width: 120px;
+            height: 120px;
+            margin-left: 100px;
+        }
+
+        .box .square:nth-child(3) {
+            z-index: 2;
+            width: 80px;
+            height: 80px;
+            right: -50px;
+            bottom: -60px;
+            margin-left: 100px;
+        }
+
+        .box .square:nth-child(4) {
+            left: 100px;
+            width: 50px;
+            height: 50px;
+            bottom: -80px;
+            margin-left: 100px;
+        }
+
+        .box .square:nth-child(5) {
+            top: -80px;
+            left: 140px;
+            width: 60px;
+            height: 60px;
+            margin-left: 100px;
+        }
+
+        .container {
+            width: 400px;
+            display: flex;
+            min-height: 400px;
+            position: relative;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 45px rgba(57, 217, 204, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin-left: 100px;
+
+        }
+
+        .form {
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            position: relative;
+        }
+
+        .form h2 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            position: relative;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        .form h2::before {
+            left: 0;
+            width: 80px;
+            height: 4px;
+            content: "";
+            bottom: -10px;
+            background: #fff;
+            position: absolute;
+        }
+
+        .form .input__box {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .form .input__box input {
+            width: 100%;
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            letter-spacing: 1px;
+            border-radius: 35px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 5px 15px rgba(213, 202, 202, 0.05);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form::placeholder {
+            color: #fff;
+        }
+
+        .form .input__box input[type="submit"] {
+            color: #666;
+            cursor: pointer;
+            background: #fff;
+            max-width: 100px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .forget {
+            color: #e5dede;
+            margin-top: 5px;
+        }
+
+        .forget a {
+            color: #489bab;
+            font-weight: 600;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+        <div class="text1" style="margin-top: 50px; font-size: 13px;">
+            <h1>
+                <span>WELCOME</span>
+                <span>I</span>
+                <span>AM</span>
+                <span>HERE</span>
+                <span>TO</span>
+                <span>ASSIGN</span>
+                <span>YOUR</span>
+                <span>TASK</span>
+                <br>
+                <span>BEFORE</span>
+                <span>THAT</span>
+                <span>ENTER</span>
+                <span>YOUR</span>
+                <span>DETAILS</span>
+                <span>!</span>
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
+            </h1>
+
+        </div>
+    </div>
+    <section>
+        <div class="colour"></div>
+        <div class="colour"></div>
+        <div class="colour"></div>
+        <div class="box">
+            <div class="square" style="--i: 0"></div>
+            <div class="square" style="--i: 1"></div>
+            <div class="square" style="--i: 2"></div>
+            <div class="square" style="--i: 3"></div>
+            <div class="square" style="--i: 4"></div>
+            <div class="container">
+                <div class="form" style="margin-top: 10px;">
+                    <h2>Login Form</h2>
+                    <form action="index.html" target="_self">
+                        <div class="input__box">
+                            <input type="text" placeholder="Username" name="name" required="required">
+
+                            <br>
+                            <br>
+                            <br>
+                            <input type="password" placeholder="Password" name="password" required="required">
+
+                        </div>
+                        <br>
+
+                        <div class="input__box1">
+                            <input type="submit" value="LOGIN" style="height: 40px;
+                          width: 100px;
+                          color: rgb(227, 222, 222);
+                          background-color: #6a857f;
+              
+                          font-weight: 600;
+                          border-radius: 5px;
+                          padding-left: 10px;
+                          padding-top:6px;
+              
+                          text-decoration: none;">
+                        </div>
+
+                        <br>
+                        <p class="forget" style="text-decoration: none;">
+                            Forgot Password? <a href="forget.html" target="_self">CLICK HERE</a>
+                        </p>
+                        <br>
+                        <p class="forget" style="text-decoration: none;">
+                            Don't have an account? <a href="signup.html" target="_self">SIGN UP</a>
+                        </p>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <br><br>
+        </div>
+    </section>
+</body>
+
+</html>
